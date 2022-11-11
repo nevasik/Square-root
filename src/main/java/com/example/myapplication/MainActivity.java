@@ -23,12 +23,11 @@ public class MainActivity extends AppCompatActivity {
         idB = findViewById(R.id.but2);
         idC = findViewById(R.id.but3);
 
-        String a_value = idA.getText().toString(); // перевели в строку
-        String b_value = idB.getText().toString();
-        String c_value = idC.getText().toString();
-
-
         button.setOnClickListener(view -> {
+            String a_value = idA.getText().toString(); // перевели в строку
+            String b_value = idB.getText().toString();
+            String c_value = idC.getText().toString();
+
             double a = Integer.parseInt(a_value);
             double b = Integer.parseInt(b_value);
             double c = Integer.parseInt(c_value);
